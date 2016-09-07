@@ -95,7 +95,8 @@ API calls
 TODO List:
 =================
 
-This list is presented in no particular order.
+*This list is presented in no particular order.*
+
 **TodoList from last assignment**
   - [ ] Get a list of courses.
   - [ ] Add a course.
@@ -112,7 +113,6 @@ This list is presented in no particular order.
     - [ ] 204 - Resource deleted.
     - [ ] 400 (412) - Required properties missing.
   - [ ] Clean up and comment code.
-
 
 **TodoList for this assignment**
   - [ ] Document using XML
