@@ -118,9 +118,9 @@ TODO List:
   - [ ] Document using XML
   - [ ] Make new Service library
   - [ ] Make new Models library. **For all models used for input and output data into API. No entity classes should be seen outside the API**
-  - [ ] Course should not store the name of the course.
+  - [X] Course should not store the name of the course.
   - [ ] Write LINQ queries
-  - [ ] Change Course.cs so that each course has "Semester" string property ("20151")
+  - [X] Change Course.cs so that each course has "Semester" string property ("20151")
   - [ ] GetListOfCourses --> Get's optional parameter that makes us able to query by semester. This can be hardcoded (see project description)
   - [ ] Add the entity class CourseTemplate. *Course will get his name by going through CourseTemplate.*
   - [ ] There should be seperate DTO&ViewModel classes used to return values and parameters to the WebAPI
