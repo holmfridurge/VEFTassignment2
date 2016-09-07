@@ -122,7 +122,7 @@ TODO List:
   - [ ] Write LINQ queries
   - [X] Change Course.cs so that each course has "Semester" string property ("20151")
   - [ ] GetListOfCourses --> Get's optional parameter that makes us able to query by semester. This can be hardcoded (see project description)
-  - [ ] Add the entity class CourseTemplate. *Course will get his name by going through CourseTemplate.*
+  - [X] Add the entity class CourseTemplate. *Course will get his name by going through CourseTemplate.*
   - [ ] There should be seperate DTO&ViewModel classes used to return values and parameters to the WebAPI
 
 
