@@ -97,30 +97,31 @@ TODO List:
 
 This list is presented in no particular order.
 **TodoList from last assignment**
-  - [X] Get a list of courses.
-  - [] Add a course.
-    - [] Auto generate unique ID for courses.
-  - [] Update a course.
-    - [] Without manually changing ID.
-  - [] Delete a course.
-  - [] Get a course with a given ID.
-  - [] Get a list of students in a course.
-  - [] Add a student to a course.
-  - [] Add correct HTTP status codes.
-    - [] 404 - Resource doesn't exist.
-    - [] 202 - Resource created.
-    - [] 204 - Resource deleted.
-    - [] 400 (412) - Required properties missing.
-  - [] Clean up and comment code.
-  - [] Document using XML
-  - [] Make new Service library
-  - [] Make new Models library. **For all models used for input and output data into API. No entity classes should be seen outside the API**
-  - [] Course should not store the name of the course.
-  - [] Write LINQ queries
-  - [] Change Course.cs so that each course has "Semester" string property ("20151")
-  - [] GetListOfCourses --> Get's optional parameter that makes us able to query by semester. This can be hardcoded (see project description)
-  - [] Add the entity class CourseTemplate. *Course will get his name by going through CourseTemplate.*
-  - [] There should be seperate DTO&ViewModel classes used to return values and parameters to the WebAPI
+  - [] Get a list of courses.
+  - [ ] Add a course.
+    - [ ] Auto generate unique ID for courses.
+  - [ ] Update a course.
+    - [ ] Without manually changing ID.
+  - [ ] Delete a course.
+  - [ ] Get a course with a given ID.
+  - [ ] Get a list of students in a course.
+  - [ ] Add a student to a course.
+  - [ ] Add correct HTTP status codes.
+    - [ ] 404 - Resource doesn't exist.
+    - [ ] 202 - Resource created.
+    - [ ] 204 - Resource deleted.
+    - [ ] 400 (412) - Required properties missing.
+  - [ ] Clean up and comment code.
+**TodoList for this assignment**
+  - [ ] Document using XML
+  - [ ] Make new Service library
+  - [ ] Make new Models library. **For all models used for input and output data into API. No entity classes should be seen outside the API**
+  - [ ] Course should not store the name of the course.
+  - [ ] Write LINQ queries
+  - [ ] Change Course.cs so that each course has "Semester" string property ("20151")
+  - [ ] GetListOfCourses --> Get's optional parameter that makes us able to query by semester. This can be hardcoded (see project description)
+  - [ ] Add the entity class CourseTemplate. *Course will get his name by going through CourseTemplate.*
+  - [ ] There should be seperate DTO&ViewModel classes used to return values and parameters to the WebAPI
 
 
 
