@@ -97,7 +97,7 @@ TODO List:
 
 This list is presented in no particular order.
 **TodoList from last assignment**
-  - [] Get a list of courses.
+  - [ ] Get a list of courses.
   - [ ] Add a course.
     - [ ] Auto generate unique ID for courses.
   - [ ] Update a course.
@@ -112,6 +112,8 @@ This list is presented in no particular order.
     - [ ] 204 - Resource deleted.
     - [ ] 400 (412) - Required properties missing.
   - [ ] Clean up and comment code.
+
+
 **TodoList for this assignment**
   - [ ] Document using XML
   - [ ] Make new Service library
