@@ -97,7 +97,7 @@ TODO List:
 
 This list is presented in no particular order.
 **TodoList from last assignment**
-  - [] Get a list of courses.
+  - [X] Get a list of courses.
   - [] Add a course.
     - [] Auto generate unique ID for courses.
   - [] Update a course.
