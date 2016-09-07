@@ -62,25 +62,34 @@ API calls
 *The following API calls should give the given result:*
 
 **/api/courses - GET**
-  - Should return a list containing exactly one element (see section about test data above)
+  *Should return a list containing exactly one element (see section about test data above)*
+
 **/api/courses?semester=20153**
-  - Should return a list containing two elements: T-514-VEFT and T-111-PROG, both taught in fall 2015 (obviously)
+  *Should return a list containing two elements: T-514-VEFT and T-111-PROG, both taught in fall 2015 (obviously)*
+
 **/api/courses/1 - GET**
-  - Should return a more detailed object describing T-514-VEFT, taught in 20153 (see above in test data definition)
+  *Should return a more detailed object describing T-514-VEFT, taught in 20153 (see above in test data definition)*
+
 **/api/courses/999- GET**
-  - Should return HTTP 404 (see test data)
+  *Should return HTTP 404 (see test data)*
+
 **/api/courses/1 - PUT**
-  - Should allow the client of the API to modify the given course instance. The properties which should be mutable are StartDate and EndDate, others (CourseID and Semester) should be immutable.
+  *Should allow the client of the API to modify the given course instance. The properties which should be mutable are StartDate and EndDate, others (CourseID and Semester) should be immutable.*
+
 **/api/courses/999 - PUT**
-  - Should return 404
+  *Should return 404*
+
 **/api/courses/1 - DELETE**
-  - Should remove the given course
+  *Should remove the given course*
+
 **/api/courses/999 - DELETE**
-  - Should return 404
+  *Should return 404*
+
 **/api/courses/1/students - GET**
-  - Should return a list of all students in T-514-VEFT in fall 2015
+  *Should return a list of all students in T-514-VEFT in fall 2015*
+
 **/api/courses/2/students - POST**
-  - Should add a new student to T-514-VEFT in 20163. It is assumed that the request body contains the 
+  *Should add a new student to T-514-VEFT in 20163. It is assumed that the request body contains the* 
 
 
 TODO List:
@@ -103,7 +112,6 @@ This list is presented in no particular order.
     - [] 204 - Resource deleted.
     - [] 400 (412) - Required properties missing.
   - [] Clean up and comment code.
-**ToDo for this assignment**
   - [] Document using XML
   - [] Make new Service library
   - [] Make new Models library. **For all models used for input and output data into API. No entity classes should be seen outside the API**
