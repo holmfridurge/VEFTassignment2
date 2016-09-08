@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using WebApplication.Data;
 using WebApplication.Models;
 using WebApplication.Services;
+using VEFTassignment2.Models;
 
 namespace WebApplication
 {
@@ -48,9 +49,12 @@ namespace WebApplication
                 .AddDefaultTokenProviders();
 
             services.AddSingleton<ICoursesRepository, CoursesRepository>();
-            services.AddSingleton<IStudentsRepository, StudentsRepository>();            
-
+            services.AddSingleton<IStudentsRepository, StudentsRepository>();
+            
             services.AddMvc();
+
+            var connection = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = school; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+            services.AddDbContext<SchoolContext>(options => options.UseSqlServer(connection));
 
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();

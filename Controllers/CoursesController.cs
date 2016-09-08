@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using WebApplication.Models;
 
 namespace WebApplication.Controllers
@@ -11,6 +12,7 @@ namespace WebApplication.Controllers
         {
             Course = course;
         }
+        
 
         // the map of courses
         public ICoursesRepository Course { get; set; }
