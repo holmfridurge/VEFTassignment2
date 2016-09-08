@@ -15,27 +15,27 @@ namespace WebApplication.Models
         {
             AddCourse(new Course
             {
-                Name = "Web services",
+                //Name = "Web services",
                 TemplateID = "T-514-VEFT",
                 StartDate = DateTime.Now,
                 EndDate = DateTime.Now.AddMonths(3),
-                Students = new StudentsRepository()
+                //Students = new StudentsRepository()
             });
             AddCourse(new Course
             {
-                Name = "Final project",
+                //Name = "Final project",
                 TemplateID = "T-404-LOKA",
                 StartDate = DateTime.Now,
                 EndDate = DateTime.Now.AddMonths(3),
-                Students = new StudentsRepository()
+                //Students = new StudentsRepository()
             });
             AddCourse(new Course
             {
-                Name = "Advanced software engineering",
+                //Name = "Advanced software engineering",
                 TemplateID = "T-730-ASEN",
                 StartDate = DateTime.Now,
                 EndDate = DateTime.Now.AddMonths(3),
-                Students = new StudentsRepository()
+                //Students = new StudentsRepository()
             });
         }
 
@@ -47,7 +47,7 @@ namespace WebApplication.Models
         public Course AddCourse(Course course)
         {
             course.ID = _nextID++;
-            course.Students = new StudentsRepository();
+            //course.Students = new StudentsRepository();
             _courses.TryAdd(course.ID, course);
             return course;
         }
@@ -78,14 +78,15 @@ namespace WebApplication.Models
         // within the course containing the 'courseID', return all the students.
         public IEnumerable<Student> GetAllStudentsInCourse(int courseID)
         {
-            return _courses[courseID].Students.GetAllStudents();
+            //return _courses[courseID].Students.GetAllStudents();
+            return null;
         }
 
         // add a new student into the course containing the following ID.
         public Student AddStudent(int courseID, Student student)
         {
-            _courses[courseID].Students.AddStudent(student);
-            return student;
+            //_courses[courseID].Students.AddStudent(student);
+            return null;
         }
     }
 }
